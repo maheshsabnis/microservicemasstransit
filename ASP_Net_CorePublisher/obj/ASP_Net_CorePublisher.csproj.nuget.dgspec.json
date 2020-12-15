@@ -1,0 +1,88 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/maheshsabnis/Projects/Microservices/Training/RabbitMQ_App_Background_Serv_MassTransit/ASP_Net_CorePublisher/ASP_Net_CorePublisher.csproj": {}
+  },
+  "projects": {
+    "/Users/maheshsabnis/Projects/Microservices/Training/RabbitMQ_App_Background_Serv_MassTransit/ASP_Net_CorePublisher/ASP_Net_CorePublisher.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/maheshsabnis/Projects/Microservices/Training/RabbitMQ_App_Background_Serv_MassTransit/ASP_Net_CorePublisher/ASP_Net_CorePublisher.csproj",
+        "projectName": "ASP_Net_CorePublisher",
+        "projectPath": "/Users/maheshsabnis/Projects/Microservices/Training/RabbitMQ_App_Background_Serv_MassTransit/ASP_Net_CorePublisher/ASP_Net_CorePublisher.csproj",
+        "packagesPath": "/Users/maheshsabnis/.nuget/packages/",
+        "outputPath": "/Users/maheshsabnis/Projects/Microservices/Training/RabbitMQ_App_Background_Serv_MassTransit/ASP_Net_CorePublisher/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/maheshsabnis/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

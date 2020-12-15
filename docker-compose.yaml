@@ -1,0 +1,29 @@
+version: "3.6"
+services:
+  rabbitmq:
+      container_name: emessage-rabbit
+      ports:
+          - 5672:5672
+          - 15672:15672
+      environment:
+          - RABBITMQ_DEFAULT_USER=guest
+          - RABBITMQ_DEFAULT_PASS=guest
+      image: rabbitmq:3-management
+  publisherapi:
+      container_name: publisherapi
+      ports:
+          - 9001:80
+      build: ASP_Net_CorePublisher  
+      image: netcorepublisher
+      restart: on-failure
+      depends_on:
+          - rabbitmq
+  subscriberapi:
+      container_name: subscriberapi
+      ports:
+          - 9002:80
+      build: ASP_Net_CoreSubscriber
+      image: netcoresubscriber
+      restart: on-failure
+      depends_on:
+          - rabbitmq
